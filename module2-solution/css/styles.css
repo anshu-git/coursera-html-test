@@ -1,0 +1,108 @@
+
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+}
+
+h1{
+	margin: auto;
+	font-size: 1.75em;
+	margin-bottom: 20px;
+}
+
+p {
+	clear: right;
+	//border: 1px solid black;
+	//background-color: #A52A2A;
+	width: 90%;
+	height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+	color: BLACK;
+	padding-bottom: 20px;
+}
+
+/* Simple Responsive Framework. */
+.menu{
+	text-align: center;
+}
+.row {
+ // position: relative;
+  width: 100%;
+  margin-right: auto;
+	margin-left: auto;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.col{
+  margin-right: 1%;
+  background-color: #efeeee;
+}
+
+.itemHeader{
+	display: block;
+	//position: relative;
+	float: right;
+	padding: 5px 20px 5px 20px;
+	//text-align:center;
+	font-size: 1.25em;
+	font-weight: bold;
+	background-color: #af957d; 
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+
+.col:nth-child(2) > .itemHeader{
+	background-color: #7d409e;
+	color: #ffffff;
+}
+
+.col:nth-child(3) > .itemHeader{
+	background-color: #409e79;
+	color: #391289;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+ 
+  .col-lg-4 {
+  	position: relative;
+  	float: left;
+    border: 1px solid black;
+    margin-bottom: 20px;   
+    width: 31.33%;
+  }
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {  
+  
+  .col-md-6 {
+  	float: left;
+    border: 1px solid green;
+    margin-bottom: 20px;
+    width: 49%;
+  }  
+
+   .col-md-6:nth-child(3) {
+  	float: left;
+    border: 1px solid green;
+    margin-bottom: 20px;
+    width: 99%;
+  } 
+}
+
+/********** Medium devices only **********/
+@media (max-width: 767px) {  
+  
+  .col-sm-12 {
+  	float: left;
+    border: 1px solid green;
+    margin-bottom: 20px;
+    width: 100%;
+  }  
+}
